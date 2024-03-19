@@ -11,56 +11,56 @@ def hello():
         <head>
             <title>Flask App</title>
             <style>
-                /* CSS стили применяемые к элементам страницы */
+                /* CSS styles applied to the page elements */
                 body {
-                    font-family: Arial, sans-serif; /* Устанавливаем шрифт для всего документа */
-                    background-color: #f2f2f2; /* Устанавливаем цвет фона */
-                    margin: 0; /* Убираем отступы по умолчанию */
-                    padding: 0; /* Убираем внутренние отступы по умолчанию */
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
                 }
                 
                 .container {
-                    width: 600px; /* Устанавливаем ширину контейнера */
-                    margin: 0 auto; /* Выравниваем контейнер по центру */
-                    padding: 20px; /* Добавляем внутренние отступы */
-                    background-color: #fff; /* Устанавливаем цвет фона контейнера */
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем тень контейнеру */
+                    width: 600px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 }
                 
                 h1 {
-                    color: #333; /* Устанавливаем цвет заголовка */
-                    text-align: center; /* Выравниваем заголовок по центру */
+                    color: #333;
+                    text-align: center;
                 }
                 
                 p {
-                    color: #666; /* Устанавливаем цвет текста */
-                    line-height: 1.5; /* Устанавливаем межстрочный интервал */
+                    color: #666;
+                    line-height: 1.5;
                 }
                 
                 .size {
-                    font-size: 8px; /* Устанавливаем размер шрифта */
-                    color: red; /* Устанавливаем цвет шрифта */
+                    font-size: 8px;
+                    color: red;
                 }
                 
                 .button {
-                    display: inline-block; /* Отображаем кнопку в виде блока */
-                    padding: 10px 20px; /* Добавляем внутренние отступы кнопки */
-                    background-color: #4CAF50; /* Устанавливаем цвет фона кнопки */
-                    color: #fff; /* Устанавливаем цвет текста кнопки */
-                    text-decoration: none; /* Убираем подчеркивание текста кнопки */
-                    border-radius: 5px; /* Закругляем углы кнопки */
-                    margin-bottom: 10px; /* Добавляем отступ снизу */
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
                 }
                 
                 .image {
-                    text-align: center; /* Выравниваем изображение по центру */
-                    margin-bottom: 10px; /* Добавляем отступ снизу */
+                    text-align: center;
+                    margin-bottom: 10px;
                 }
                 
                 .block {
-                    background-color: #ddd; /* Устанавливаем цвет фона блока */
-                    padding: 10px; /* Добавляем внутренние отступы блока */
-                    margin-bottom: 10px; /* Добавляем отступ снизу */
+                    background-color: #ddd;
+                    padding: 10px;
+                    margin-bottom: 10px;
                 }
             </style>
         </head>
@@ -94,7 +94,7 @@ def hello():
         </html>
     '''
 
-if ____name__ == '__main__':
+if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
