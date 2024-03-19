@@ -49,6 +49,18 @@ def hello():
                     color: #fff; /* Устанавливаем цвет текста кнопки */
                     text-decoration: none; /* Убираем подчеркивание текста кнопки */
                     border-radius: 5px; /* Закругляем углы кнопки */
+                    margin-bottom: 10px; /* Добавляем отступ снизу */
+                }
+                
+                .image {
+                    text-align: center; /* Выравниваем изображение по центру */
+                    margin-bottom: 10px; /* Добавляем отступ снизу */
+                }
+                
+                .block {
+                    background-color: #ddd; /* Устанавливаем цвет фона блока */
+                    padding: 10px; /* Добавляем внутренние отступы блока */
+                    margin-bottom: 10px; /* Добавляем отступ снизу */
                 }
             </style>
         </head>
@@ -56,13 +68,33 @@ def hello():
             <div class="container">
                 <h1>Hello Flask from alpine-linux!</h1>
                 <p>Size on the page: <span class="size">8</span></p>
-                <a href="#" class="button">Click me</a>
+                <a href="#" class="button">Button 1</a>
+                <a href="#" class="button">Button 2</a>
+                <a href="#" class="button">Button 3</a>
+                
+                <div class="image">
+                    <img src="https://example.com/image1.jpg" alt="Image 1">
+                </div>
+                
+                <div class="image">
+                    <img src="https://example.com/image2.jpg" alt="Image 2">
+                </div>
+                
+                <div class="block">
+                    <h3>Block 1</h3>
+                    <p>This is block 1 content.</p>
+                </div>
+                
+                <div class="block">
+                    <h3>Block 2</h3>
+                    <p>This is block 2 content.</p>
+                </div>
             </div>
         </body>
         </html>
     '''
 
-if __name__ == '__main__':
+if ____name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
